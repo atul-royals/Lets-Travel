@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lets Travel</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Travel</h2>
+            <div class="toggle" onclick="onClick()"></div>
+        </header>
+
+        <video src="travel.mp4" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Never Stop</h2>
+            <h3>Exploring The World</h3>
+            <p> “The journey of a thousand miles begins with a single step.”
+            </p>
+            <a href="#">Explore</a>
+
+        </div>
+
+        <ul class="social">
+            <li><a href="#"></a><img src="fb.png" alt="" width="50" height="50"></li>
+            <li><a href="#"></a><img src="tw.png" alt="" width="40" height="40"></li>
+            <li><a href="#"></a><img src="in.png" alt="" width="50" height="50"></li>
+
+        </ul>
+
+
+    </section>
+
+    <div class="menu">
+        <u1>
+            <li><a href="#">"Home"</a></li>
+            <li><a href="#">"News"</a></li>
+            <li><a href="#">"Destination"</a></li>
+            <li><a href="#">"Blog"</a></li>
+            <li><a href="#">"Contact"</a></li>
+
+        </u1>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const showcase =
+            document.querySelector('.showcase');
+
+        /*  menuToggle.addEventListner("click", () => {
+                 menuToggle.classList.toggle('active');
+                 showcase.classList.toggle('active');
+     
+             }) */
+        function onClick() {
+            menuToggle.classList.toggle('active');
+            showcase.classList.toggle('active');
+
+            ///work to be done
+
+        }
+    </script>
+</body>
+
+</html>
